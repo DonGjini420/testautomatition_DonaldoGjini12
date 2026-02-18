@@ -1,0 +1,6 @@
+applicantName,applicantEmail,applicantPhone,personalNumber,loanAmount,loanType,loanTerm,monthlyIncome,existingDebts,employmentStatus,address
+Test Andersson,test@example.com,+46701234567,199503152679,50000,car,24,30000,10000,employed,"Storgatan 1, 123 45 Stockholm, Sweden"
+Stora Belopp,storabelopp@example.com,+46702345678,199105053217,400000,renovation,60,75000,50000,employed,"Villagatan 10, 456 78 Göteborg, Sweden"
+Bröllops Person,wedding@example.com,+46703456789,199510072710,100000,wedding,36,45000,0,employed,"Kyrkkvägen 5, 789 01 Västerås, Sweden"
+Semester Svensson,vacation@example.com,+46704567890,199212345678,30000,vacation,12,35000,5000,employed,"Semestergatan 12, 234 56 Malmö, Sweden"
+Båt Person,boat@example.com,+46705678901,199411111234,200000,boat,48,60000,30000,self-employed,"Strandvägen 15, 567 89 Kristianstad, Sweden"
