@@ -76,7 +76,7 @@ def context(browser: Browser):
 # PAGE FIXTURE - Function scope (ny sida för varje test)
 # ============================================================================
 @pytest.fixture
-def page(context: BrowserContext) -> Page:
+def page(context: BrowserContext):
     """
     Skapar en ny sida (tab) i webbläsaren-kontexten för varje test.
     
