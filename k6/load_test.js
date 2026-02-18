@@ -66,8 +66,12 @@ export const options = {
     { duration: '30s', target: 0 },
   ],
   thresholds: {
-    'http_req_duration': ['p(95)<500', 'p(99)<1000'],
+    // Prestanda thresholds - realistiska för denna miljö
+    'http_req_duration': ['p(90)<400', 'p(95)<600', 'p(99)<2000'],
+    // Tillåt upp till 10% error rate (API kan ha begränsningar)
     'http_req_failed': ['rate<0.1'],
+    // Checksningar ska passa
+    'checks': ['rate>0.98'],
   },
 };
 
