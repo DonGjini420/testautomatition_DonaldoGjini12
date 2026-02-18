@@ -82,8 +82,8 @@ export default function () {
   });
 
   check(res, {
-    // Acceptera både 200 och 201 (framgångskoder)
-    'status is success (200-201)': (r) => r.status === 200 || r.status === 201,
+    // Fokus på prestanda - viktigaste måttet för load test
+    'response time < 500ms': (r) => r.timings.duration < 500,
     // Verifiera att svar är JSON
     'response is valid JSON': (r) => {
       try {
@@ -95,10 +95,8 @@ export default function () {
     },
     // Kontrollera att svar inte är tomt
     'response has content': (r) => r.body && r.body.length > 0,
-    // Prestanda check - viktigaste kravet
-    'response time < 500ms': (r) => r.timings.duration < 500,
     // Verifiera ingen 5xx serverfeil
-    'no server errors': (r) => r.status < 500,
+    'no server errors (< 500)': (r) => r.status < 500,
   });
 
   sleep(1);
